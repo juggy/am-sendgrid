@@ -1,6 +1,17 @@
 = am-sendgrid
 
-This gem makes the sendgrid smtp api a little nice to use from within ActionMailer.  See the test cases for an example.
+This gem makes the sendgrid smtp api a little nicer to use from within ActionMailer.
+
+== Installation
+
+  gem install am-sendgrid
+
+In rails, add:
+  config.gem "am-sendgrid"
+
+== Usage
+
+See test/am_sendgrid_test.rb for example of to use.
 
 == Note on Patches/Pull Requests
  

@@ -6,12 +6,11 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "am-sendgrid"
     gem.summary = %Q{Makes it easy to call the sendgrid SMTP api from ActionMailer}
-    gem.description = %Q{TODO: longer description of your gem}
-    gem.email = "me@christophernelsonconsulting.com"
-    gem.homepage = "http://github.com/superchris/am-sendgrid"
+    gem.email = "chris@gaslightsoftware.com"
+    gem.homepage = "http://github.com/sharespost/am-sendgrid"
     gem.authors = ["Chris Nelson"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.add_dependency "actionmailer", ">= 2.3.2"
+    gem.add_dependency "json_pure"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
@@ -21,7 +20,7 @@ end
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
+  test.pattern = 'test/**/*_test.rb'
   test.verbose = true
 end
 

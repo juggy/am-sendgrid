@@ -1,6 +1,6 @@
 = am-sendgrid
 
-Description goes here.
+This gem makes the sendgrid smtp api a little nice to use from within ActionMailer.  See the test cases for an example.
 
 == Note on Patches/Pull Requests
  
@@ -14,4 +14,4 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2010 Chris Nelson. See LICENSE for details.
+Copyright (c) 2010 SharesPost. See LICENSE for details.

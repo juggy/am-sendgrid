@@ -8,9 +8,9 @@ module ActionMailer
       @sendgrid_header ||= SmtpApiHeader.new
     end
 
-    def mail_with_sendgrid_header
+    def mail_with_sendgrid_header(headers={}, &block)
       headers["X-SMTPAPI"] = sendgrid_header.asJSON if sendgrid_header
-      mail_without_sendgrid_header
+      mail_without_sendgrid_header(headers, &block)
     end
 
     alias_method_chain :mail, :sendgrid_header

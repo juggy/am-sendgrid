@@ -1,4 +1,4 @@
-require 'actionmailer'
+require 'action_mailer'
 require 'smtp_api_header'
 
 module ActionMailer
